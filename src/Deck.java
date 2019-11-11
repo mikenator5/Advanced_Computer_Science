@@ -9,7 +9,7 @@ public class Deck {
     public static final String SUITS[] = {"CLUBS","SPADES","DIAMONDS","HEARTS"};
 
     private int topCardIndex;
-    private ArrayList<Card> stackOfCards = new ArrayList<Card>(NUMCARDS);
+    private ArrayList<Card> stackOfCards = new ArrayList<>(NUMCARDS);
 
     public Deck() {
         System.out.println("Creating new deck");
@@ -41,7 +41,6 @@ public class Deck {
         return stackOfCards + "   topCardIndex = " + topCardIndex;
     }
 
-    public static void main(String[] args) {
-    }
+    public static void main(String[] args) { }
 
 }

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Player {
     private ArrayList<Card> hand = new ArrayList<Card>();
@@ -46,7 +47,13 @@ public class Player {
         return count;
     }
 
-    public boolean hit( ) {
+    public boolean hit(int player) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Player " + player + " do you want to hit? y/n ");
+        String input = scan.next();
+        if (input.equals("y")) {
+            return true;
+        }
         return false;
     }
 
